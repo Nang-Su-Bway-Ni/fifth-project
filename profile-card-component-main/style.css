@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --desaturated-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+/* - Font size (name and stats): 18px
+
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: url(./images/bg-pattern-top.svg) -100% 200% no-repeat,
+    url(./images/bg-pattern-bottom.svg) 200% -100% no-repeat;
+  background-color: var(--dark-cyan);
+  color: var(--desaturated-blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  flex-wrap: wrap;
+}
+h1 {
+  color: var(--desaturated-blue);
+  font-size: 22px;
+  padding: 10px;
+}
+p {
+  color: var(--Dark-gray);
+  font-size: 18px;
+}
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+}
+.container img {
+  border-radius: 15px 15px 0 0;
+}
+.container .profile img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -50px;
+}
+.container .profile .header {
+  padding: 20px;
+  border-bottom: 1px solid hsl(0, 0%, 59%, 0.3);
+}
+.container .profile .header h1 span {
+  color: var(--Dark-gray);
+  font-weight: 400;
+}
+.container .profile .under {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.container .profile .under p {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background: url(./images/bg-pattern-top.svg) 130% 200% no-repeat,
+      url(./images/bg-pattern-bottom.svg) -40% -60% no-repeat;
+    background-color: var(--dark-cyan);
+  }
+}
